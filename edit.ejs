@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit post | The Blog Squad</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+</head>
+<body class="auth-page">
+    <main
+        id="post-edit-form"
+        class="auth-card edit-card"
+    >
+    </main>
+    <script id="post-data" type="application/json"><%- JSON.stringify({
+        postId: post.blog_id,
+        title: post.title,
+        body: post.body,
+        category: post.category,
+        postColor: post.post_color
+    }).replace(/</g, "\\u003c") %></script>
+    <script src="/PostEditForm.bundle.js"></script>
+</body>
+</html>

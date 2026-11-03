@@ -1,0 +1,29 @@
+{
+  "name": "cs312",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:auth": "esbuild public/auth.jsx --bundle --minify --outfile=public/auth.js",
+    "build:post-form": "esbuild public/BlogPostForm.js --bundle --minify --loader:.js=jsx --outfile=public/blog-post-form.bundle.js",
+    "build:post-ui": "esbuild public/PostList.js public/PostEditForm.js --bundle --minify --loader:.js=jsx --outdir=public --entry-names=[name].bundle",
+    "build:profile": "esbuild public/Profile.js --bundle --minify --loader:.js=jsx --outfile=public/profile.bundle.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "pg": "^8.23.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}
