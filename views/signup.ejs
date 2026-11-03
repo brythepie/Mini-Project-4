@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create account | The Blog Squad</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+</head>
+<body class="auth-page">
+    <main
+        id="auth-root"
+        class="auth-card"
+        data-page="signup"
+        data-error="<%= error %>"
+        data-user-id="<%= userId %>"
+        data-name="<%= name %>"
+        data-age="<%= age %>"
+        data-occupation="<%= occupation %>"
+        data-city="<%= city %>"
+    ></main>
+    <script src="/auth.js"></script>
+</body>
+</html>

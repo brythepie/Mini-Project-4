@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | The Blog Squad</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-row">
+            <h1><a href="/">The Blog Squad</a></h1>
+            <nav class="account-nav" aria-label="Account">
+                <a class="button secondary" href="/">Home</a>
+                <form action="/signout" method="POST">
+                    <button type="submit" class="button secondary">Sign out</button>
+                </form>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+        <div id="profile-root"></div>
+    </main>
+    <script src="/profile.bundle.js"></script>
+</body>
+</html>
